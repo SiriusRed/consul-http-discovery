@@ -1,0 +1,14 @@
+{
+  "service": {
+    "name": "consul-template",
+    "ID": "consul-template",
+    "check":  {
+        "id": "consul-template",
+        "name": "consul-template status",
+        "service_id": "consul-template",
+        "interval": "30s",
+        "shell": "/bin/bash",
+        "script": "/etc/consul.d/scripts/service-check.sh consul-template"
+    }
+  }
+}
